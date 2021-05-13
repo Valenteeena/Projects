@@ -35,7 +35,7 @@ export default {
   },
    mounted() {
         axios
-            .get('https://70c5b72c-65db-4a66-ba01-3e14763157e8.mock.pstmn.io/')
+            .get('https://244b8df3-7491-4cfd-a48b-267f19446372.mock.pstmn.io/')
             .then(response => (
               this.rowData = response.data.data
             ))
