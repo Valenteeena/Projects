@@ -7,14 +7,14 @@
           </tr>
         </thead>
         <tbody>
-        <tr v-for="r in rowData" :key="rowData[r]">
-                  <td>{{r.project_name}}</td>
-                  <td>{{r.developer}}</td>
-                  <td>{{r.main_contractor}}</td>
-                  <td>{{r.address}}</td>
-                  <td>{{r.state}}</td>
-                  <td>{{r.status}}</td>
-                  <td>{{r.sector}}</td>
+        <tr v-for="row in rowData" :key="rowData[row]">
+                  <td>{{row.project_name}}</td>
+                  <td>{{row.developer}}</td>
+                  <td>{{row.main_contractor}}</td>
+                  <td>{{row.address}}</td>
+                  <td>{{row.state}}</td>
+                  <td>{{row.status}}</td>
+                  <td>{{row.sector}}</td>
               </tr>
       </tbody>
       </table>
@@ -50,7 +50,7 @@ export default {
 
   .tableScroller{
     color:$primary-color;
-     margin: auto;
+    margin: auto;
     overflow-x: scroll;
     overflow-y: visible;
     padding-bottom: 5px;
